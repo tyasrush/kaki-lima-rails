@@ -1,0 +1,72 @@
+<%= form_for(kaki_lima) do |f| %>
+  <% if kaki_lima.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(kaki_lima.errors.count, "error") %> prohibited this kaki_lima from being saved:</h2>
+
+      <ul>
+      <% kaki_lima.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nama %>
+    <%= f.text_field :nama %>
+  </div>
+
+  <div class="field">
+    <%= f.label :lokasi %>
+    <%= f.text_field :lokasi %>
+  </div>
+
+  <div class="field">
+    <%= f.label :kabupaten %>
+    <%= f.text_field :kabupaten %>
+  </div>
+
+  <div class="field">
+    <%= f.label :kecamatan %>
+    <%= f.text_field :kecamatan %>
+  </div>
+
+  <div class="field">
+    <%= f.label :kelurahan %>
+    <%= f.text_field :kelurahan %>
+  </div>
+
+  <div class="field">
+    <%= f.label :alamat %>
+    <%= f.text_field :alamat %>
+  </div>
+
+  <div class="field">
+    <%= f.label :lat %>
+    <%= f.text_field :lat %>
+  </div>
+
+  <div class="field">
+    <%= f.label :lng %>
+    <%= f.text_field :lng %>
+  </div>
+
+  <div class="field">
+    <%= f.label :phone %>
+    <%= f.text_field :phone %>
+  </div>
+
+  <div class="field">
+    <%= f.label :open %>
+    <%= f.text_field :open %>
+  </div>
+
+  <div class="field">
+    <%= f.label :closed %>
+    <%= f.text_field :closed %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

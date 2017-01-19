@@ -1,0 +1,1 @@
+json.array! @kaki_limas, partial: 'kaki_limas/kaki_lima', as: :kaki_lima

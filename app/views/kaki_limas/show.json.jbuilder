@@ -1,0 +1,1 @@
+json.partial! "kaki_limas/kaki_lima", kaki_lima: @kaki_lima

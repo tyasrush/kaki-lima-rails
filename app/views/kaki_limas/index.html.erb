@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+<% title "Kaki Lima" %>
+
+<%= content_tag(:ul, '', id: 'parent-list') do %>
+  <% @kaki_limas.each do |kaki_lima| %>
+    <%= content_tag(:li) do %>
+      <% link_to kaki_lima, class: 'link-item' do %>
+        <%= content_tag(:ul, '', class: 'child-list') do %>
+          <%= content_tag(:li, '', class: 'title-item-list') do %>
+            <%= kaki_lima.nama %>
+          <% end %>
+          <%= content_tag(:li, '', class: 'title-item-list') do %>
+            <%= kaki_lima.kelurahan %>, <%= kaki_lima.kecamatan %>, <%= kaki_lima.kabupaten %>
+          <% end %>
+        <% end %>
+      <% end %>
+    <% end %>
+  <% end %>
+<% end %>

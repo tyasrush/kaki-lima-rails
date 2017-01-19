@@ -1,0 +1,60 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nama:</strong>
+  <%= @kaki_lima.nama %>
+</p>
+
+<p>
+  <strong>Lokasi:</strong>
+  <%= @kaki_lima.lokasi %>
+</p>
+
+<p>
+  <strong>Kabupaten:</strong>
+  <%= @kaki_lima.kabupaten %>
+</p>
+
+<p>
+  <strong>Kecamatan:</strong>
+  <%= @kaki_lima.kecamatan %>
+</p>
+
+<p>
+  <strong>Kelurahan:</strong>
+  <%= @kaki_lima.kelurahan %>
+</p>
+
+<p>
+  <strong>Alamat:</strong>
+  <%= @kaki_lima.alamat %>
+</p>
+
+<p>
+  <strong>Lat:</strong>
+  <%= @kaki_lima.lat %>
+</p>
+
+<p>
+  <strong>Lng:</strong>
+  <%= @kaki_lima.lng %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @kaki_lima.phone %>
+</p>
+
+<p>
+  <strong>Open:</strong>
+  <%= @kaki_lima.open %>
+</p>
+
+<p>
+  <strong>Closed:</strong>
+  <%= @kaki_lima.closed %>
+</p>
+
+<%= link_to 'Edit', edit_kaki_lima_path(@kaki_lima) %> |
+<%= link_to 'Back', kaki_limas_path %> |
+<%= link_to 'Destroy', kaki_lima_path(@kaki_lima), method: :delete, data: { confirm: 'Are you sure?' } %>

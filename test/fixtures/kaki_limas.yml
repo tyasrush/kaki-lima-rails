@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nama: MyString
+  lokasi: MyString
+  kabupaten: MyString
+  kecamatan: MyString
+  kelurahan: MyString
+  alamat: MyString
+  lat: 1.5
+  lng: 1.5
+  phone: MyString
+  open: MyString
+  closed: MyString
+
+two:
+  nama: MyString
+  lokasi: MyString
+  kabupaten: MyString
+  kecamatan: MyString
+  kelurahan: MyString
+  alamat: MyString
+  lat: 1.5
+  lng: 1.5
+  phone: MyString
+  open: MyString
+  closed: MyString
