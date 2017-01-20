@@ -11,10 +11,10 @@
 <body>
   <div id="toolbar">
     <h2><%= yield(:title) %></h2>
-    <%= form_tag(search_path, class: 'search_section') do %>
-      <%= text_field_tag 'query', nil, placeholder: 'Cari warung...', class: 'search_input' %>
-      <%= submit_tag 'Search', class: 'search_submit' %>
-    <% end %>
+    <%= #form_tag(search_path, class: 'search_section') do %>
+      <%= #text_field_tag 'query', nil, placeholder: 'Cari warung...', class: 'search_input' %>
+      <%= #submit_tag 'Search', class: 'search_submit' %>
+    <% #end %>
   </div>
 
   <%= yield %>
