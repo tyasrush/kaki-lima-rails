@@ -39,4 +39,4 @@ class KakiLima < ApplicationRecord
   end
 end
 
-KakiLima.import
+# KakiLima.import

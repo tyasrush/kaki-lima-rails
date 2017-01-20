@@ -8,19 +8,6 @@ GIT
       hashie
     elasticsearch-rails (0.1.9)
 
-GIT
-  remote: git://github.com/elasticsearch/elasticsearch-ruby.git
-  revision: 7ccffefa671aae906223ecdb74ee7f98d6665772
-  specs:
-    elasticsearch (1.0.18)
-      elasticsearch-api (= 1.0.18)
-      elasticsearch-transport (= 1.0.18)
-    elasticsearch-api (1.0.18)
-      multi_json
-    elasticsearch-transport (1.0.18)
-      faraday
-      multi_json
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -73,6 +60,14 @@ GEM
     coffee-script-source (1.12.2)
     concurrent-ruby (1.0.4)
     debug_inspector (0.0.2)
+    elasticsearch (5.0.0)
+      elasticsearch-api (= 5.0.0)
+      elasticsearch-transport (= 5.0.0)
+    elasticsearch-api (5.0.0)
+      multi_json
+    elasticsearch-transport (5.0.0)
+      faraday
+      multi_json
     erubis (2.7.0)
     execjs (2.7.0)
     faraday (0.11.0)
@@ -183,10 +178,8 @@ PLATFORMS
 DEPENDENCIES
   byebug
   coffee-rails (~> 4.2)
-  elasticsearch!
   elasticsearch-model!
   elasticsearch-rails!
-  elasticsearch-transport!
   jbuilder (~> 2.5)
   jquery-rails
   listen (~> 3.0.5)
