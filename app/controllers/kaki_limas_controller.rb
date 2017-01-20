@@ -10,8 +10,8 @@ class KakiLimasController < ApplicationController
   end
 
   def search
-    @kaki_limas = KakiLima.search(params[:query])
-    render json: @kaki_limas
+    # @kaki_limas = KakiLima.search(params[:query])
+    # render json: @kaki_limas
     # respond_to do |format|
     #   format.json { render json: @kaki_limas }
     # end

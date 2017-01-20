@@ -1,25 +1,25 @@
 require 'csv'
-require 'elasticsearch/model'
+# require 'elasticsearch/model'
 
 class KakiLima < ApplicationRecord
-  include Elasticsearch::Model
-  include Elasticsearch::Model::Callbacks
-
-  settings do
-    mappings dynamic: 'false' do
-      indexes :nama
-      indexes :lokasi
-      indexes :kelurahan
-      indexes :kecamatan
-      indexes :kabupaten
-      indexes :alamat
-      indexes :phone
-    end
-  end
-
-  def as_indexed_json(options={})
-    as_json(only: [:id, :nama, :lokasi, :kelurahan, :kecamatan, :kabupaten, :alamat, :phone, :latitude, :longitude])
-  end
+  # include Elasticsearch::Model
+  # include Elasticsearch::Model::Callbacks
+  #
+  # settings do
+  #   mappings dynamic: 'false' do
+  #     indexes :nama
+  #     indexes :lokasi
+  #     indexes :kelurahan
+  #     indexes :kecamatan
+  #     indexes :kabupaten
+  #     indexes :alamat
+  #     indexes :phone
+  #   end
+  # end
+  #
+  # def as_indexed_json(options={})
+  #   as_json(only: [:id, :nama, :lokasi, :kelurahan, :kecamatan, :kabupaten, :alamat, :phone, :latitude, :longitude])
+  # end
 
   def self.import_file(file)
     file_csv = File.new(file.path)

@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   get   '/all'    => 'kaki_lima_api#index'
   get   '/import' => 'kaki_limas#newImport'
   post  '/import' => 'kaki_limas#saveImport'
-  post  '/search' => 'kaki_limas#search'
+  # post  '/search' => 'kaki_limas#search'
 
   resources :kaki_limas
 

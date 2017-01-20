@@ -6,8 +6,8 @@ git_source(:github) do |repo_name|
 end
 
 # gem 'elasticsearch', git: 'git://github.com/elasticsearch/elasticsearch-ruby.git'
-gem 'elasticsearch-model', git: 'git://github.com/elasticsearch/elasticsearch-rails.git'
-gem 'elasticsearch-rails', git: 'git://github.com/elasticsearch/elasticsearch-rails.git'
+# gem 'elasticsearch-model', git: 'git://github.com/elasticsearch/elasticsearch-rails.git'
+# gem 'elasticsearch-rails', git: 'git://github.com/elasticsearch/elasticsearch-rails.git'
 # gem 'elasticsearch-transport', git: 'git://github.com/elasticsearch/elasticsearch-ruby.git'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.1'
